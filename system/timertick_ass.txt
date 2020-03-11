@@ -1,0 +1,2 @@
+variable "_NRTASKS" 9;
+variable "_NRTCBS"  9;

@@ -1,0 +1,115 @@
+-- Symbols for Lego Mindstorms ROM routines, for feeding
+-- to the Bound-T static code analyser.
+--
+-- Extracted from Kekoa Proudfoot's ROM description and
+-- from librcx/lib/rom.h, with precedence given to the
+-- latter (librcx) when there were different symbols for
+-- the same address.
+--
+-- This file was created by Niklas Holsti at Tidorum Ltd.
+-- No copyright is claimed.
+--
+-- $Revision: 1.1 $
+-- $Date: 2005/08/25 21:18:42 $
+--
+rom|mul16                               16#0130#
+rom|umod16                              16#014a#
+rom|sdiv16                              16#0156#
+rom|smod16                              16#0188#
+rom|udiv16                              16#01be#
+rom|mul32                               16#01fe#
+rom|sdiv32                              16#026e#
+rom|udiv32                              16#0306#
+rom|init                                16#03ae#
+rom|init_memory                         16#03ca#
+rom|copy_memory                         16#042a#
+rom|clear_memory                        16#0436#
+rom|init_control_registers              16#0442#
+rom|default_handler                     16#046a#
+rom|NMI_dispatch                        16#046c#
+rom|IRQ0_dispatch                       16#0478#
+rom|IRQ1_dispatch                       16#0484#
+rom|IRQ2_dispatch                       16#0490#
+rom|IC1A_dispatch                       16#049c#
+rom|IC1B_dispatch                       16#04a8#
+rom|IC1C_dispatch                       16#04b4#
+rom|IC1D_dispatch                       16#04c0#
+rom|OC1A_dispatch                       16#04cc#
+rom|OC1B_dispatch                       16#04d8#
+rom|FOV1_dispatch                       16#04e4#
+rom|CMI0A_dispatch                      16#04f0#
+rom|CMI0B_dispatch                      16#04fc#
+rom|OVI0_dispatch                       16#0508#
+rom|CMI1A_dispatch                      16#0514#
+rom|CMI1B_dispatch                      16#0520#
+rom|OVI1_dispatch                       16#052c#
+rom|ERI_dispatch                        16#0538#
+rom|RXI_dispatch                        16#0544#
+rom|TXI_dispatch                        16#0550#
+rom|TEI_dispatch                        16#055c#
+rom|AD_dispatch                         16#0568#
+rom|WOVF_dispatch                       16#0574#
+rom|rom_main                            16#0580#
+rom|rom_init_handlers                   16#0688#
+rom|rom_update                          16#070c#
+rom|rom_shutdown_handlers               16#0d18#
+rom|rom_power_off                       16#0d3c#
+rom|rom_init_program_data               16#0d44#
+rom|rom_program_update                  16#0d8c#
+rom|rom_program_stop                    16#1446#
+rom|do_nothing_148a                     16#148a#
+rom|init_sensors                        16#1498#
+rom|read_sensor                         16#14c0#
+rom|set_sensor_active                   16#1946#
+rom|set_sensor_passive                  16#19c4#
+rom|do_nothing_1a1e                     16#1a1e#
+rom|shutdown_sensors                    16#1a22#
+rom|init_motors                         16#1a4a#
+rom|control_motor                       16#1a4e#
+rom|do_nothing_1ab0                     16#1ab0#
+rom|shutdown_motors                     16#1ab4#
+rom|IRQ0_handler                        16#1ab8#
+rom|init_buttons                        16#1aba#
+rom|play_view_button_sound              16#1b32#
+rom|set_lcd_segment                     16#1b62#
+rom|clear_lcd_segment                   16#1e4a#
+rom|read_buttons                        16#1fb6#
+rom|set_lcd_number                      16#1ff2#
+rom|clear_display                       16#27ac#
+rom|refresh_display                     16#27c8#
+rom|do_nothing_27f0                     16#27f0#
+rom|shutdown_buttons                    16#27f4#
+rom|write_lcd_outputs                   16#283c#
+rom|IRQ1_handler                        16#294a#
+rom|init_power                          16#2964#
+rom|play_system_sound                   16#299a#
+rom|get_power_status                    16#29f2#
+rom|set_on_off_key_output_low           16#2a32#
+rom|set_on_off_key_output_high          16#2a48#
+rom|do_nothing_2a5e                     16#2a5e#
+rom|shutdown_power                      16#2a62#
+rom|TEI_handler                         16#2a84#
+rom|TXI_handler                         16#2a9c#
+rom|RXI_handler                         16#2c10#
+rom|ERI_handler                         16#30a4#
+rom|init_serial                         16#30d0#
+rom|set_range_long                      16#3250#
+rom|set_range_short                     16#3266#
+rom|play_sound_or_set_data_pointer      16#327c#
+rom|reset_minute_timer                  16#339a#
+rom|receive_data                        16#33b0#
+rom|check_for_data                      16#3426#
+rom|send_data                           16#343e#
+rom|shutdown_serial                     16#3636#
+rom|init_port_6_bit_3                   16#3692#
+rom|do_nothing_36a6                     16#36a6#
+rom|shutdown_port_6_bit_3               16#36aa#
+rom|OCIA_handler                        16#36ba#
+rom|AD_handler                          16#3b74#
+rom|init_timer                          16#3b9a#
+rom|get_sound_playing_flag              16#3ccc#
+rom|control_motor_2                     16#3ce6#
+rom|control_output                      16#3de0#
+rom|clear_sensor_and_timer_data         16#3e9e#
+rom|do_nothing_3ed0                     16#3ed0#
+rom|shutdown_timer                      16#3ed4#

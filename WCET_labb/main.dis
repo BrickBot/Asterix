@@ -1,0 +1,64 @@
+
+main.coff-h8300:     file format coff-h8300
+
+Disassembly of section .vectors:
+Disassembly of section .text:
+
+00000100 <_start>:
+ 100:	40 02       	40 02             bra	.+2 (104)
+ 102:	24 02       	24 02             mov.b	@0x2:8,r4h
+
+00000104 <_main>:
+ 104:	6d f6       	6d f6             mov.w	r6,@-e7
+ 106:	0d 76       	0d 76             mov.w	r7,r6
+ 108:	1b 87       	1b 87             subs	#0x2,er7
+ 10a:	1b 87       	1b 87             subs	#0x2,er7
+ 10c:	79 02 00 2a 	79 02 00 2a       mov.w	#0x2a,r2
+ 110:	6f e2 ff fe 	6f e2 ff fe       mov.w	r2,@(0xfffe:16,e6)
+ 114:	79 02 02 9a 	79 02 02 9a       mov.w	#0x29a,r2
+ 118:	6f e2 ff fc 	6f e2 ff fc       mov.w	r2,@(0xfffc:16,e6)
+
+0000011c <.L2>:
+ 11c:	6f 62 ff fe 	6f 62 ff fe       mov.w	@(0xfffe:16,r6),r2
+ 120:	79 03 12 45 	79 03 12 45       mov.w	#0x1245,r3
+ 124:	1d 32       	1d 32             cmp.w	r3,r2
+ 126:	43 02       	43 02             bls	.+2 (12a)
+ 128:	40 2e       	40 2e             bra	.+46 (158)
+
+0000012a <.L5>:
+	...
+
+0000012c <.L6>:
+ 12c:	6f 62 ff fc 	6f 62 ff fc       mov.w	@(0xfffc:16,r6),r2
+ 130:	79 03 ff 13 	79 03 ff 13       mov.w	#0xff13,r3
+ 134:	1d 32       	1d 32             cmp.w	r3,r2
+ 136:	43 02       	43 02             bls	.+2 (13a)
+ 138:	40 0e       	40 0e             bra	.+14 (148)
+
+0000013a <.L8>:
+ 13a:	6f 62 ff fc 	6f 62 ff fc       mov.w	@(0xfffc:16,r6),r2
+ 13e:	0d 23       	0d 23             mov.w	r2,r3
+ 140:	0b 83       	0b 83             adds	#0x2,er3
+ 142:	6f e3 ff fc 	6f e3 ff fc       mov.w	r3,@(0xfffc:16,e6)
+ 146:	40 e4       	40 e4             bra	.-28 (12c)
+
+00000148 <.L4>:
+ 148:	6f 62 ff fe 	6f 62 ff fe       mov.w	@(0xfffe:16,r6),r2
+ 14c:	0d 23       	0d 23             mov.w	r2,r3
+ 14e:	0b 83       	0b 83             adds	#0x2,er3
+ 150:	0b 03       	0b 03             adds	#0x1,er3
+ 152:	6f e3 ff fe 	6f e3 ff fe       mov.w	r3,@(0xfffe:16,e6)
+ 156:	40 c4       	40 c4             bra	.-60 (11c)
+
+00000158 <.L3>:
+ 158:	19 00       	19 00             sub.w	r0,r0
+ 15a:	40 00       	40 00             bra	.0 (15c)
+
+0000015c <.L1>:
+ 15c:	0b 87       	0b 87             adds	#0x2,er7
+ 15e:	0b 87       	0b 87             adds	#0x2,er7
+ 160:	6d 76       	6d 76             mov.w	@r7+,r6
+ 162:	54 70       	54 70             rts	
+Disassembly of section .tors:
+Disassembly of section .data:
+Disassembly of section .stack:

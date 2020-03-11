@@ -1,0 +1,64 @@
+SYSTEMMODE = NORMAL;
+RAM = 1000;
+
+MODE mode_1{
+
+	RESOLUTION = 1000;
+
+/* System tasks, do not edit or remove */
+	HARD_TASK APERIODIC IRQ0{
+		ACTIVATOR = IRQSIG0_mode_1;
+		OFFSET = 0;
+		DEADLINE = 50;
+		PRIORITY = 100;
+		STACK = 50;
+		ROUTINE = irq0_isr;
+		ERR_ROUTINE = irqerror;
+	};
+	HARD_TASK APERIODIC IRQ1{
+		ACTIVATOR = IRQSIG1_mode_1;
+		OFFSET = 0;
+		DEADLINE = 50;
+		PRIORITY = 99;
+		STACK = 50;
+		ROUTINE = irq1_isr;
+		ERR_ROUTINE = irqerror;
+        };
+
+/* Put user-tasks here */
+	HARD_TASK PERIODIC TASK_A{
+   	PERIOD_TIME = 10;
+		OFFSET = 0;
+		DEADLINE = 10;
+		PRIORITY = 10;
+		STACK = 50;
+		ROUTINE = task_a;
+	};
+
+	HARD_TASK APERIODIC idle{
+                ACTIVATOR = 0;
+		OFFSET = 0;
+		DEADLINE = 0;
+		PRIORITY = 0;
+		STACK = 50;
+		ROUTINE = idletask;
+	};
+
+
+/* Put waitfree-communication here */
+
+/* default signals for irq, do not edit */
+	SIGNAL IRQSIG0_mode_1{
+		USER = IRQ0;
+	};
+
+
+	SIGNAL IRQSIG1_mode_1{
+		USER = IRQ1;
+	};
+
+/* Put signals here */
+
+/* Put semaphores here */
+};
+
