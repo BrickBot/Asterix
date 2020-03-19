@@ -7,9 +7,12 @@ A graphical user interface with support for real-time applications, built on top
   - The “Front End” and “Grammar” documents from the “Documents” page have been copied to the “docs” folder in the version control repository
 * [SourceForge Website](https://cubtrix.sourceforge.io/)
 * [RCX Demo with Asterix (via YouTube)](https://youtu.be/u82BuA1jDq4)
-* Publication: [Porting the Bound-T WCET tool to Lego MindStorms and the Asterix RTOS](https://www.es.mdh.se/pdf_publications/867.pdf)
-  - WCET: Worst-Case Execution Time
-  - This document has also been copied to the “docs” folder in the version control repository
+* Publications (also copied to the “docs” folder in the version control repository)
+  - [Porting the Bound-T WCET tool to Lego MindStorms and the Asterix RTOS](https://www.es.mdh.se/pdf_publications/867.pdf)
+  - [Using a WCET Analysis Tool in Real-Time Systems Education](https://www.researchgate.net/publication/30815521_Using_a_WCET_Analysis_Tool_in_Real-Time_Systems_Education)
+  - [The Asterix Real-Time Kernel](https://www.researchgate.net/publication/2489884_The_Asterix_real-time_kernel)
+
+* The Bound-T WCET (Worst-Case Execution Time) tool noted by some of the above publications is [available here](https://github.com/BrickBot/Bound-T-H8-300) in another repository within this GitHub organization
 
 ### Release Package
 The copy of the original release package includes binaries that would be needed to support the build environment,
